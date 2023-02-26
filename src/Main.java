@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MultiTable mt = new MultiTable();
 
-        String msg1 = "Enter the Starting value";
-        String msg2 = "Enter the Ending value";
-
-
+        mt.askStartingValue();
+        mt.askEndingValue();
+        mt.loadArray();
+        mt.printMultiplicationTable();
+        System.out.println();
     }
 }
